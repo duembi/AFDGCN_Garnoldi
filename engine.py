@@ -257,7 +257,7 @@ class Engine(object):
         # np.save('./NewNet_{}_pred.npy'.format(args.dataset), y_pred.cpu().numpy())
         print(y_true.shape)
         df_real_denormalized = pd.DataFrame({'Target': y_true.cpu().numpy().flatten()})
-        df_results_denormalized = pd.DataFrame({'Output': y_pred.flatten()})
+        df_results_denormalized = pd.DataFrame({'Output': y_pred.cpu().numpy().flatten()})
         df_real_denormalized.to_csv('real_flow.csv', index=False)
         df_results_denormalized.to_csv('test_results.csv', index=False)
         for t in range(y_true.shape[1]):
