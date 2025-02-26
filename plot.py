@@ -11,8 +11,8 @@ df_pred = pd.read_csv(pred_data_path, skiprows=1, header=None, names=['timestep'
 
 # Define Parameters
 start_date = pd.Timestamp("2024-02-24 05:45")
-time_interval = 15  # in minutes
-daily_time_steps = 73
+time_interval = 5  # in minutes
+daily_time_steps = 288
 total_days = 2
 
 # Extract Real Data (21 - 31 January)
