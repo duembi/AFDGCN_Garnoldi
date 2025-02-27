@@ -3,6 +3,8 @@ import pandas as pd
 # Input and output file paths
 input_file = 'C:\\Users\\beyza\\Downloads\\test_results_garson.csv'  # Replace with the path to your input file
 output_file = 'test_gar.csv'  # Replace with the desired path for the output file
+#output_file = 'real_gar.csv'  # Replace with the desired path for the output file
+
 
 # Read the input CSV file
 df_input = pd.read_csv(input_file, skiprows=1, names=["flow"])  # Read the file with one column named "flow"
